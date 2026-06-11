@@ -1,0 +1,131 @@
+{
+  "name": "adcp-multiagente",
+  "displayName": "ADCP Multiagente",
+  "description": "Automatización del flujo ADCP (Análisis, Diseño, Construcción, Pruebas) mediante multiagentes de IA",
+  "version": "0.1.0",
+  "publisher": "cmartinezUCSC",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "AI",
+    "Education",
+    "Other"
+  ],
+  "keywords": [
+    "ADCP",
+    "multiagente",
+    "CrewAI",
+    "software-engineering",
+    "education"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "adcp.analyze",
+        "title": "ADCP: Análisis",
+        "icon": "$(search)"
+      },
+      {
+        "command": "adcp.design",
+        "title": "ADCP: Diseño",
+        "icon": "$(edit)"
+      },
+      {
+        "command": "adcp.construct",
+        "title": "ADCP: Construcción",
+        "icon": "$(code)"
+      },
+      {
+        "command": "adcp.test",
+        "title": "ADCP: Pruebas",
+        "icon": "$(beaker)"
+      },
+      {
+        "command": "adcp.showPanel",
+        "title": "ADCP: Mostrar Panel",
+        "icon": "$(layout-panel)"
+      },
+      {
+        "command": "adcp.resetState",
+        "title": "ADCP: Reiniciar Estado del Proyecto",
+        "icon": "$(refresh)"
+      },
+      {
+        "command": "adcp.startBackend",
+        "title": "ADCP: Iniciar Backend",
+        "icon": "$(server)"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "adcp-sidebar",
+          "title": "ADCP Multiagente",
+          "icon": "media/adcp-icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "adcp-sidebar": [
+        {
+          "id": "adcpPhases",
+          "name": "Fases ADCP",
+          "icon": "$(list-tree)",
+          "contextualTitle": "Flujo ADCP"
+        }
+      ]
+    },
+    "menus": {
+      "view/title": [
+        {
+          "command": "adcp.showPanel",
+          "when": "view == adcpPhases",
+          "group": "navigation"
+        },
+        {
+          "command": "adcp.resetState",
+          "when": "view == adcpPhases",
+          "group": "navigation"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "ADCP Multiagente",
+      "properties": {
+        "adcp.backendUrl": {
+          "type": "string",
+          "default": "http://localhost:8000",
+          "description": "URL del servidor backend ADCP"
+        },
+        "adcp.autoStartBackend": {
+          "type": "boolean",
+          "default": false,
+          "description": "Iniciar automáticamente el backend al activar la extensión"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "@types/vscode": "^1.120.0",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "eslint": "^8.57.1",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "axios": "^1.17.0"
+  }
+}
