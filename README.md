@@ -93,9 +93,10 @@ Importante:
 ---
 
 ## Licencia
-
+```
 CC0 1.0 Universal
 Claudia Martínez-Araneda
+```
 =======
 # ADCP_multiagente
 Automatización de ADCP por multiagentes
