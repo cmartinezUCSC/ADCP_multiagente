@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ADCP Multiagente
 
 Sistema multi-agente de **Análisis, Diseño, Codificación y Pruebas** basado en [CrewAI](https://github.com/joaomdmoura/crewAI).
@@ -94,3 +95,7 @@ Importante:
 ## Licencia
 
 MIT © Claudia Martínez-Araneda
+=======
+# ADCP_multiagente
+Automatización de ADCP por multiagentes
+>>>>>>> b81a2ea48b00209b509237cd1836fd00521cc2c5
