@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # ADCP Multiagente
 
 Sistema multi-agente de **Análisis, Diseño, Codificación y Pruebas** basado en [CrewAI](https://github.com/joaomdmoura/crewAI).
