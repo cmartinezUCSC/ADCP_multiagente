@@ -1,0 +1,23 @@
+# Entornos virtuales
+.venv/
+.venv311/
+venv_312/
+venv/
+
+# Variables de entorno (contiene claves privadas)
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
