@@ -20,7 +20,8 @@ Dado un problema, cuatro agentes especializados trabajan en secuencia para produ
 
 ## Requisitos
 
-- Python 3.11
+- Python 3.11 (para las versiones más actualizada, CrewAI no es reconocida)
+- Librería Python CreawAI
 - Clave de API de OpenAI
 
 ---
