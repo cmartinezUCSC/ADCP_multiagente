@@ -95,7 +95,7 @@ Importante:
 
 ## Licencia
 
-MIT © Claudia Martínez-Araneda
+Creative Commons CC Claudia Martínez-Araneda
 =======
 # ADCP_multiagente
 Automatización de ADCP por multiagentes
