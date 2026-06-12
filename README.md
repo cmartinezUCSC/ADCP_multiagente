@@ -12,7 +12,7 @@ Dado un problema, cuatro agentes especializados trabajan en secuencia para produ
 
 ---
 
-## Autora
+## Autor
 
 **Claudia Martínez-Araneda**
 
@@ -57,7 +57,7 @@ El programa pedirá:
 1. Lenguaje de programación para la solución (menú 1–11 o personalizado).
 2. Descripción del problema a resolver.
 
-Al finalizar, muestra la solución completa con expresiones matemáticas formateadas cuando corresponde.
+Al finalizar, muestra la solución completa aplicando ADCP.
 
 ---
 
